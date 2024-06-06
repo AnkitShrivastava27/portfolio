@@ -1,0 +1,9 @@
+.Education{
+    background-color: rgba(240, 248, 255, 0.599);
+    border: black 2px solid;
+    width:fit-content;
+    padding: 15px;
+   position:relative;
+   top: 10%;
+   left: 35%;
+}

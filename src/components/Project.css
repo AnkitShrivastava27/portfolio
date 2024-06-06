@@ -1,0 +1,49 @@
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .custom-carousel {
+    width: 60%;
+    max-width: 600px;
+    margin-right: 20px;
+  }
+  
+  .custom-carousel .carousel .slide img {
+    border-radius: 10px;
+  }
+  
+  .desc {
+    width: 40%;
+    text-align: left;
+  }
+  
+  .desc h4 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #000000;
+  }
+  
+  .desc h5 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #090909;
+  }
+  
+  .desc ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .desc ul li {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #020202;
+  }
+  .links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
