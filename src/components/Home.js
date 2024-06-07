@@ -14,7 +14,7 @@ import './home.css';
         <div>
             <h4>Hii There!</h4>
             <p> I'm <strong>Ankit Kumar Shrivastava</strong>, currently a third-year B.Tech student specializing in Computer Engineering at <strong>Marwadi University</strong>. With a strong passion for technology and innovation, I am skilled in Python, JavaScript, and web development. I am enthusiastic about contributing to open-source projects and am actively seeking internship opportunities to apply and expand my knowledge in real-world settings.</p>
-            <h4>Skill</h4>
+            
             <ul><li>JavaScript</li>
             <li>Java</li>
             <li>Html,css</li>

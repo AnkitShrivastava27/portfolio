@@ -1,45 +1,47 @@
-
-.header{
-color: black;
-background-color: transparent;
-
+/* Basic structure with styling */
+.header {
+  color: black;
+  background-color: transparent;
 }
-.navbar{
+
+.navbar {
   list-style: none;
   display: flex;
-  justify-content:center;
-  align-items:center;
-  background-color:transparent;
-  
- 
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }
-  a{
+
+a {
   color: white;
   text-decoration: none;
   font-weight: bolder;
-  
-  
 }
 
-.navbar li{
+
+.navbar li {
   border: 2px black solid;
   background-color: rgb(39, 39, 232);
   height: 50px;
-  width:150px;
+  width: 150px;
   border-radius: 10px;
   margin-left: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.navbar li  :hover{
-background-color: aquamarine;
-color: black;
-height: 50px;
-width:150px;
-border-radius: 10px;
 
-display: flex;
-align-items: center;
-justify-content: center;
+.navbar li:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .navbar li {
+      height: 30px; /* Reduced height for smaller screens */
+      width: 100px; /* Reduced width for smaller screens */
+      font-size: 14px; /* Reduced font size for smaller screens */
+      margin-left: 10px; /* Reduced margin for smaller screens */
+  }
 }

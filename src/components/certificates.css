@@ -1,20 +1,27 @@
+.certificates {
+    text-align: center;
+    padding: 20px;
+}
+
+.certificate {
+    margin-bottom: 20px;
+    position: relative;
+}
 
 .text {
-   display: flex;
-   justify-content: left;
-   padding-left: 10px;
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
     color: azure;
     cursor: pointer;
     transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
 .img {
-    
-   float: right;
-   position: fixed;
-   top:20%;
-   left :38%;
-
+    float: right;
+    position: fixed;
+    top: 20%;
+    left: 38%;
     margin-left: 100px;
     height: 500px;
     width: 800px;
@@ -28,27 +35,82 @@
     font-weight: bolder;
 }
 
-.oracle:hover +  .oracle1 {
+.oracle:hover + .oracle1,
+.pp:hover + .pp1,
+.cc1:hover + .cc11,
+.cc2:hover + .cc21,
+.lin:hover + .lin1,
+.ibm:hover + .ibm1 {
     display: block;
     opacity: 1;
 }
-.pp:hover + .pp1{
-    display: block;
-    opacity: 1;
+
+
+@media (max-width: 768px) {
+    .certificates {
+        padding: 10px;
+    }
+    
+    .certificate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .img {
+        display: block;
+        position: static;
+        width: 90%;
+        max-width: none;
+        height: auto;
+        margin: 10px 0;
+        opacity: 1;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .img:hover {
+        transform: scale(1.05); 
+        opacity: 0.9; 
+    }
+
+    .text {
+        font-size: 16px;
+        padding-left: 5px;
+        text-align: center; 
+        margin-bottom: 10px;
+    }
 }
-.cc1:hover + .cc11{
-    display: block;
-    opacity: 1;
-}
-.cc2:hover + .cc21{
-    display: block;
-    opacity: 1;
-}
-.lin:hover + .lin1{
-    display: block;
-    opacity: 1;
-}
-.ibm:hover + .ibm1{
-    display: block;
-    opacity: 1;
+
+
+@media (max-width: 480px) {
+    .certificates {
+        padding: 5px;
+    }
+
+    .certificate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .text {
+        font-size: 14px;
+        padding-left: 5px;
+        text-align: center; 
+        margin-bottom: 5px;
+    }
+
+    .img {
+        width: 100%;
+        max-width: none;
+        margin: 5px 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .img:hover {
+        transform: scale(1.1); 
+        opacity: 0.85; 
+    }
 }
