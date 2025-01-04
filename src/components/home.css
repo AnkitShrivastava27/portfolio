@@ -1,52 +1,121 @@
-.logo {
-  height: 25px;
-  width: 25px;
-  margin-left: 5px;
+/* Home Page Styles */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
 }
 
-.mainLogo {
-  list-style: none;
+/* Hero Section */
+.hero-section {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  justify-content: space-around;
+  background: linear-gradient(to right, #0539f4bd, #566b71db);
+  padding: 50px 20px;
+  color: white;
 }
 
-.profile {
-  margin-top: 20px;
-  height: 170px;
-  width: 170px;
+.profile-image {
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 30px;
 }
 
-.home {
+.intro-text {
+  max-width: 600px;
+}
+
+.intro-text h1 span {
+  color: #03DAC6;
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #03DAC6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #018786;
+}
+
+/* Skills Section */
+.skills-section {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.skills-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.home div {
-  margin-left: 20px;
+.skill {
+  margin: 20px;
+  text-align: center;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  .home {
-      flex-direction: column;
-      align-items: center;
-  }
-  ul{
-    list-style: none;
-  }
-  .profile {
-      margin-top: 10px; /* Reduced margin for better spacing */
-  }
+.skill-icon {
+  font-size: 40px;
+  color: #018786;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
 
-  .home div {
-      margin-left: 0; /* Reset margin for inner divs */
-      text-align: center; /* Center text content */
-  }
+.skill-icon:hover {
+  transform: scale(1.2);
+}
 
-  .mainLogo {
-      justify-content: center; /* Center social media icons on mobile */
-  }
+.skill p {
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-info {
+  text-align: center;
+  margin-top: 40px;
+  color:#018786;
+}
+
+.contact-info h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color:#018786;
+}
+
+.contact-info a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
 }
