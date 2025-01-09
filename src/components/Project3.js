@@ -48,7 +48,11 @@ const Project3 = () => {
         </ul>
         <ul>
             <h5>Links</h5>
+<<<<<<< HEAD
             <li>Website : <a href="https://wrightist.vercel.app/" >url</a></li>
+=======
+            <li>Website : <a href="https://wrightist.vercel.app/" >goto Website</a></li>
+>>>>>>> 819d15ca6f01463ddcb1193211d052564da5652e
             <li>github repo : <a href="https://github.com/AnkitShrivastava27/BlogWebsite">Click here</a></li>
         </ul>
         </div>
