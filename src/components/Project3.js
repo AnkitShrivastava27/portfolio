@@ -5,7 +5,7 @@ import p1p1 from '../Project3/1.png';
 import p1p2 from '../Project3/2.png';
 import p1p3 from '../Project3/3.png';
 import p1p4 from '../Project3/4.png';
-import p1p5 from '../Project3/5.png'
+import p1p5 from '../Project3/5.png';
 import './Project.css';
 
 const Project3 = () => {
@@ -21,40 +21,35 @@ const Project3 = () => {
         showStatus={false}
       >
         <div>
-          <img src={p1p1} alt="home" />
+          <img src={p1p1} alt="Blog homepage" />
         </div>
         <div>
-          <img src={p1p2} alt="contacts" />
+          <img src={p1p2} alt="Blog contacts" />
         </div>
         <div>
-          <img src={p1p3} alt="cart" />
+          <img src={p1p3} alt="Blog cart" />
         </div>
         <div>
-          <img src={p1p4} alt="cart" />
+          <img src={p1p4} alt="Blog cart" />
         </div>
         <div>
-          <img src={p1p5} alt="cart" />
+          <img src={p1p5} alt="Blog features" />
         </div>
       </Carousel>
       <div className='desc'>
         <h4>Blog Website</h4>
         <p>For my fourth semester project, I built a blog website using the MERN stack, which includes MongoDB, Express.js, React, and Node.js. This project highlights my skills in creating a full-stack web application. The site features a user-friendly interface with React, ensuring a responsive and engaging experience. On the backend, Express.js and Node.js handle the server-side logic and API endpoints, making data flow smoothly. MongoDB efficiently manages the storage and retrieval of blog posts and comments. This project not only demonstrates my web development skills but also my ability to build practical and visually appealing applications.</p>
         <div className="links">
-        <ul>
-        <h5>Technology used</h5>
-          <li>JavaScript</li>
-          
-          <li>HTML, CSS</li>
-        </ul>
-        <ul>
+          <ul>
+            <h5>Technology used</h5>
+            <li>JavaScript</li>
+            <li>HTML, CSS</li>
+          </ul>
+          <ul>
             <h5>Links</h5>
-<<<<<<< HEAD
-            <li>Website : <a href="https://wrightist.vercel.app/" >url</a></li>
-=======
             <li>Website : <a href="https://wrightist.vercel.app/" >goto Website</a></li>
->>>>>>> 819d15ca6f01463ddcb1193211d052564da5652e
-            <li>github repo : <a href="https://github.com/AnkitShrivastava27/BlogWebsite">Click here</a></li>
-        </ul>
+            <li>GitHub repo : <a href="https://github.com/AnkitShrivastava27/BlogWebsite">Click here</a></li>
+          </ul>
         </div>
       </div>
     </div>
