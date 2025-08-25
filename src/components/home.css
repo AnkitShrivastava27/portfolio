@@ -67,7 +67,7 @@
 
 .skill-icon {
   font-size: 40px;
-  color: #018786;
+  color: #0844de;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
@@ -84,7 +84,7 @@
 .contact-info {
   text-align: center;
   margin-top: 40px;
-  color:#018786;
+  color:#011e87;
 }
 
 .contact-info h4 {
@@ -95,7 +95,7 @@
 .contact-info p {
   font-size: 16px;
   margin-bottom: 10px;
-  color:#018786;
+  color:#040261;
 }
 
 .contact-info a {
@@ -119,3 +119,10 @@
 .social-icon:hover {
   transform: scale(1.2);
 }
+.typing-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0bf050;
+  margin-top: 10px;
+}
+

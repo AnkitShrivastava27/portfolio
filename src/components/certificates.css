@@ -12,7 +12,8 @@
     display: flex;
     justify-content: left;
     padding-left: 10px;
-    color: azure;
+    color: rgb(0, 0, 0);
+    size: 50px;
     cursor: pointer;
     transition: color 0.3s ease, font-weight 0.3s ease;
 }

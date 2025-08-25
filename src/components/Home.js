@@ -1,10 +1,21 @@
 import React from "react";
+import { ReactTyped } from "react-typed";   // ✅ Correct import
 import git from "../images/github.png";
 import insta from "../images/instagram.png";
 import linked from "../images/linkedin.png";
 import profile from "../images/profile.jpg";
 import Resume from "./resume.pdf";
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaPython, FaNodeJs, FaDatabase, FaAndroid } from 'react-icons/fa';
+import profile2 from "../images/profile.png";
+import { 
+  FaHtml5, 
+  FaCss3Alt, 
+  FaJsSquare, 
+  FaReact, 
+  FaPython, 
+  FaNodeJs, 
+  FaDatabase, 
+  FaAndroid 
+} from 'react-icons/fa';
 import './home.css';
 
 const Home = () => {
@@ -12,7 +23,22 @@ const Home = () => {
     <div className="home-container">
       {/* Hero Section */}
       <div className="hero-section">
-        <img className="profile-image" src={profile} alt="Profile" />
+        <div className="overlay">
+        <img className="profile-image" src={profile2} alt="Profile" />
+
+        {/* Typing Animation */}
+        <div className="typing-text">
+          <ReactTyped
+            strings={[
+              "Computer Engineer",
+              "Open to Work"
+            ]}
+            typeSpeed={80}
+            backSpeed={50}
+            loop
+          />
+        </div>
+</div>
         <div className="intro-text">
           <h4>Hi There! 👋</h4>
           <h1>I’m <span>Ankit Kumar Shrivastava</span></h1>
@@ -22,7 +48,11 @@ const Home = () => {
             I am currently seeking internship opportunities to expand my expertise in real-world applications.
           </p>
           {/* Download Resume Button */}
-          <a href={Resume} download="Ankit_Shrivastava_Resume.pdf" className="resume-button">
+          <a 
+            href={Resume} 
+            download="Ankit_Shrivastava_Resume.pdf" 
+            className="resume-button"
+          >
             📄 Download Resume
           </a>
         </div>
@@ -32,38 +62,14 @@ const Home = () => {
       <div className="skills-section">
         <h3>Skills</h3>
         <div className="skills-list">
-          <div className="skill">
-            <FaHtml5 className="skill-icon" />
-            <p>HTML5</p>
-          </div>
-          <div className="skill">
-            <FaCss3Alt className="skill-icon" />
-            <p>CSS3</p>
-          </div>
-          <div className="skill">
-            <FaJsSquare className="skill-icon" />
-            <p>JavaScript</p>
-          </div>
-          <div className="skill">
-            <FaReact className="skill-icon" />
-            <p>ReactJS</p>
-          </div>
-          <div className="skill">
-            <FaNodeJs className="skill-icon" />
-            <p>NodeJS</p>
-          </div>
-          <div className="skill">
-            <FaPython className="skill-icon" />
-            <p>Python</p>
-          </div>
-          <div className="skill">
-            <FaDatabase className="skill-icon" />
-            <p>SQL & MongoDB</p>
-          </div>
-          <div className="skill">
-            <FaAndroid className="skill-icon" />
-            <p>Android Studio</p>
-          </div>
+          <div className="skill"><FaHtml5 className="skill-icon" /><p>HTML5</p></div>
+          <div className="skill"><FaCss3Alt className="skill-icon" /><p>CSS3</p></div>
+          <div className="skill"><FaJsSquare className="skill-icon" /><p>JavaScript</p></div>
+          <div className="skill"><FaReact className="skill-icon" /><p>ReactJS</p></div>
+          <div className="skill"><FaNodeJs className="skill-icon" /><p>NodeJS</p></div>
+          <div className="skill"><FaPython className="skill-icon" /><p>Python</p></div>
+          <div className="skill"><FaDatabase className="skill-icon" /><p>SQL & MongoDB</p></div>
+          <div className="skill"><FaAndroid className="skill-icon" /><p>Android Studio</p></div>
         </div>
       </div>
 
@@ -75,13 +81,25 @@ const Home = () => {
         
         {/* Social Links */}
         <div className="social-links">
-          <a href="https://github.com/AnkitShrivastava27" target="_blank" rel="noopener noreferrer">
+          <a 
+            href="https://github.com/AnkitShrivastava27" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <img className="social-icon" src={git} alt="GitHub" />
           </a>
-          <a href="https://www.instagram.com/the.ankit.srivastava?igsh=azE0bG5mMzdod20w" target="_blank" rel="noopener noreferrer">
+          <a 
+            href="https://www.instagram.com/the.ankit.srivastava?igsh=azE0bG5mMzdod20w" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <img className="social-icon" src={insta} alt="Instagram" />
           </a>
-          <a href="https://www.linkedin.com/in/ankit-kumar-shrivastava-79329226a" target="_blank" rel="noopener noreferrer">
+          <a 
+            href="https://www.linkedin.com/in/ankit-kumar-shrivastava-79329226a" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <img className="social-icon" src={linked} alt="LinkedIn" />
           </a>
         </div>
