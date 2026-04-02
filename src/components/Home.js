@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";   // ✅ Correct import
 import git from "../images/github.png";
 import insta from "../images/instagram.png";
 import linked from "../images/linkedin.png";
-import profile from "../images/profile.jpg";
+//import profile from "../images/profile.jpg";
 import Resume from "./resume.pdf";
 import profile2 from "../images/profile.png";
 import { 
