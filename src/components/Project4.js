@@ -44,7 +44,7 @@ const Project1 = () => {
         </ul>
         <ul>
             <h5>Links</h5>
-            <li>Website : <a href="#">Not Deployed</a></li>
+            <li>Website : Not Deployed</li>
             <li>github repo : <a href="https://github.com/AnkitShrivastava27">Click here</a></li>
         </ul>
         </div>
