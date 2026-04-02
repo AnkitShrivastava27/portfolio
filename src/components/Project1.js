@@ -19,13 +19,13 @@ const Project1 = () => {
         showStatus={false}
       >
         <div>
-          <img src={p1p1} alt="home" />
+          <img src={p1p1} alt="1" />
         </div>
         <div>
-          <img src={p1p2} alt="contacts" />
+          <img src={p1p2} alt="2" />
         </div>
         <div>
-          <img src={p1p3} alt="cart" />
+          <img src={p1p3} alt="3" />
         </div>
       </Carousel>
       <div className='desc'>

@@ -49,7 +49,12 @@
   justify-content: space-around;
   align-items: center;
 }
-
+.phone {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 5px;
+}
 /* Media query for tablets and below */
 @media (max-width: 768px) {
   .project {
