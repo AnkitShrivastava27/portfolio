@@ -13,7 +13,8 @@ const Education = () => {
           <div className="timeline-content">
             <h3>B.Tech in Computer Engineering</h3>
             <p className="institute">Marwadi University, Rajkot, Gujarat</p>
-            <p className="year">Expected Graduation: July 2026</p>
+            <p className="year">Graduation:Feb 2026</p>
+            <p><strong>Cgpa:</strong>8.80</p>
             <h4>Relevant Coursework</h4>
             <ul>
               <li>Data Structures and Algorithms</li>
@@ -21,6 +22,9 @@ const Education = () => {
               <li>Operating Systems</li>
               <li>Computer Networks</li>
               <li>Web Development</li>
+              <li>Mobile App Development- using Flutter</li>
+              <li> Machine Learning</li>
+              <li>Artificial Intelligence</li>
             </ul>
           </div>
         </div>

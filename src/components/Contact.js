@@ -1,23 +1,50 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import git from "../images/github.png";
 import insta from "../images/instagram.png";
 import linked from "../images/linkedin.png";
 import "./contact.css";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.text);
+          alert("Message sent");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          alert("Failed to send message, please try again later.");
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <div className="contact-container">
       <h2>Contact Me</h2>
 
       {/* Contact Form */}
-      <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+      <form ref={form} className="contact-form" onSubmit={sendEmail}>
         <label>
           Name:
-          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="text" name="user_name" placeholder="Your Name" required />
         </label>
         <label>
           Email:
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="email" name="user_email" placeholder="Your Email" required />
         </label>
         <label>
           Message:
