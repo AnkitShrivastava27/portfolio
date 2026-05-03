@@ -1,14 +1,14 @@
 .education-section {
-  padding: 40px 20px;
+  padding: 30px 16px;
   background: #f9f9f987;
   border-radius: 12px;
 }
 
 .section-title {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #333;
   position: relative;
 }
@@ -16,56 +16,94 @@
 .timeline {
   position: relative;
   margin: 0 auto;
-  padding-left: 30px;
+  padding-left: 24px;
   border-left: 3px solid #6c63ff;
 }
 
 .timeline-item {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   position: relative;
 }
 
 .timeline-dot {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: #6c63ff;
   border-radius: 50%;
   position: absolute;
   left: -10px;
   top: 5px;
+  flex-shrink: 0;
 }
 
 .timeline-content {
   background: #fff;
-  padding: 20px;
+  padding: 16px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   transition: transform 0.2s ease;
 }
 
 .timeline-content:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
 .timeline-content h3 {
-  font-size: 20px;
+  font-size: 17px;
   margin-bottom: 5px;
   color: #222;
 }
 
 .institute {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #444;
 }
 
 .year {
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .timeline-content ul {
-  margin: 10px 0 0 20px;
+  margin: 8px 0 0 18px;
   color: #333;
+  font-size: 14px;
+}
+
+/* Tablet and up */
+@media (min-width: 640px) {
+  .education-section {
+    padding: 40px 24px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .timeline {
+    padding-left: 30px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  .timeline-content h3 {
+    font-size: 20px;
+  }
+
+  .institute {
+    font-size: 16px;
+  }
+
+  .year {
+    font-size: 14px;
+  }
+
+  .timeline-content ul {
+    font-size: 15px;
+  }
 }

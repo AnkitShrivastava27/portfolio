@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('../src/images/background.jpg');
   background-size: cover;
+  background-attachment: scroll; /* 'fixed' causes issues on iOS */
+  background-position: center;
+  overflow-x: hidden; /* prevent horizontal scroll on mobile */
 }
 
 code {

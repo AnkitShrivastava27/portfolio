@@ -1,67 +1,92 @@
 .contact-container {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #3700b3;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 4px;
+  color: #6200ee;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* prevents overflow on mobile */
+  -webkit-appearance: none; /* removes iOS default styles */
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 14px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #6200ee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background-color: #3700b3;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* Tablet and up */
+@media (min-width: 640px) {
+  .contact-container {
     padding: 20px;
-    text-align: center;
   }
-  
+
   .contact-container h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    color: #3700b3;
   }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 30px;
-  }
-  
-  .contact-form label {
-    font-size: 1rem;
-    text-align: left;
-    margin-bottom: 5px;
-    color: #6200ee;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
+
   .contact-form button {
+    width: auto;
     padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #6200ee;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
   }
-  
-  .contact-form button:hover {
-    background-color: #3700b3;
-  }
-  
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .social-links img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-links img:hover {
-    transform: scale(1.2);
-  }
-  
+}
